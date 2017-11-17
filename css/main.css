@@ -1,58 +1,4 @@
 /*CLASES REUTILIZABLES*/
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-footer{
-  bottom: 10px;
-}
-
-.container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-.container:before, .container:after {
-  content: " ";
-  display: table;
-}
-
-*:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.container:after {
-  clear: both;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.m-0 {
-  margin: 0px;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
 
 /*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
 
@@ -73,15 +19,20 @@ ul{
  padding: 10px;
  overflow: hidden;
  background-color:#ffffff;
+ list-style: none;
 }
 
 ul li{
   float: left;
+  text-transform: uppercase;
+  margin-left: 25px;
 }
 
 li a {
   color: #000000;
   text-decoration: none;
+  font-family: fantasy;
+  font-size: 20px;
 }
 
 li a:hover {
@@ -91,22 +42,38 @@ li a:hover {
 #ajust {
   text-align: center;
   color: #ffffff;
-  height: 400px;
+  height: 500px;
   background-image: url(../assets/images/bg-home.jpg);
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+#ajust p{
+  background-color: #2ecc71;
+  width: 15px;
+text-align: center;
 }
 
 #pink{
+  margin-top: -20px;
   text-align: center;
   color: #ffffff;
   background-color: #f17c72;
 }
 
-#picture-one{
-position: relative;
-
+#services{
+display: flex;
 }
 
-#picture-two{
+#picture-one{
   text-align: center;
   color: #191919;
+}
+
+#name{
+padding-right: 500px;
+}
+
+.big{
+  text-transform: uppercase;
 }
