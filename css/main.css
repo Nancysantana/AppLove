@@ -1,79 +1,109 @@
-/*CLASES REUTILIZABLES*/
-
-/*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
-
 body {
-  margin: 0 auto;
   font-size: 16px;
+  margin:auto;
 }
 
-.one{
-position: absolute;
-top: -1px;
-right: 50px;
-
+header {
+  position:relative;
 }
 
-ul{
- margin: 20px;
- padding: 10px;
- overflow: hidden;
- background-color:#ffffff;
- list-style: none;
+h4, h6 {
+  font-size: 15px;
+  margin:30px 20px;
 }
 
-ul li{
-  float: left;
-  text-transform: uppercase;
-  margin-left: 25px;
+h2, h5 {
+  font-size: 25px;
+  margin-top: 20px;
 }
 
-li a {
+li > a {
   color: #000000;
-  text-decoration: none;
   font-family: fantasy;
   font-size: 20px;
+  text-decoration: none;
 }
 
-li a:hover {
+li > a:hover {
   color: #E95853;
 }
 
-#ajust {
-  text-align: center;
-  color: #ffffff;
-  height: 500px;
-  background-image: url(../assets/images/bg-home.jpg);
-  margin-top: 30px;
+ul > li{
+  float: left;
+  margin-left: 25px;
   text-transform: uppercase;
 }
 
-#ajust p{
+ul{
+  background-color:#ffffff;
+  list-style: none;
+  margin: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+#ajust {
+  background-image: url(../assets/images/bg-home.jpg);
+  color: #ffffff;
+  height: 500px;
+  margin-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#ajust > a{
   background-color: #2ecc71;
-  width: 15px;
-text-align: center;
+  height: 20px;
+  padding: 10px;
+  width: 130px;
 }
 
 #pink{
+  background-color: #f17c72;
+  color: #ffffff;
   margin-top: -20px;
   text-align: center;
-  color: #ffffff;
-  background-color: #f17c72;
-}
-
-#services{
-display: flex;
 }
 
 #picture-one{
-  text-align: center;
   color: #191919;
+  text-align: center;
 }
 
 #name{
-padding-right: 500px;
+  padding-right: 500px;
+}
+
+#services{
+  display: flex;
+  width: 100%;
+}
+
+.ajust {
+  display: inline-block;
+  display: flex;
+  margin-left: 25%;
+}
+
+.ajust > img {
+  margin: 40px 30px;
 }
 
 .big{
   text-transform: uppercase;
+}
+
+.conteiner {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  position:static;
+  width: 1200px;
+}
+
+.one{
+  position: absolute;
+  right: 50px;
+  top: -1px;
 }
